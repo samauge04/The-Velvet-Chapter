@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | The Velvet Chapter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout-styles.css"> <!-- Checkout-specific styles -->
+    <script defer src="script.js"></script> <!-- Handles checkout logic -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="The Velvet Chapter Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart-search">
+            <a href="cart.html">🛒Cart</a>
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-container">
+        <h1>Checkout</h1>
+        <div class="checkout-details">
+            <h2>Order Summary</h2>
+            <p>Total: <span id="checkout-total">$0.00</span></p>
+
+            <h2>Shipping Information</h2>
+            <form id="shipping-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required><br><br>
+
+                <button type="submit" class="button">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-policy">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="shipping&amp;returns.html">Shipping & Returns</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/thevelvetchapter"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/thevelvetchapter"><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+    <p class="copyright">&copy; 2025 The Velvet Chapter. All rights reserved.</p>
+</body>
+</html>

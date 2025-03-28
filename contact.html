@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with The Velvet Chapter for inquiries, support, and store locations.">
+    <meta name="keywords" content="contact, customer support, bookstore, The Velvet Chapter, locations">
+    <title>Contact Us | The Velvet Chapter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- JavaScript for form validation -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="The Velvet Chapter Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart-search">
+            <a href="cart.html">🛒Cart</a>
+            <input type="text" placeholder="Search...">
+        </div>
+     </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Have questions or need support? Send us a message, and we'll get back to you soon!</p>
+
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="message-status"></div> <!-- Message confirmation area -->
+    </section>
+
+    <!-- Store Locations (Optional) -->
+    <section class="locations">
+        <h2>Our Locations</h2>
+        <div class="store-location">
+            <h3>📍 Main Branch - Port of Spain</h3>
+            <p>123 Book Lane, Port of Spain, Trinidad</p>
+            <p>📞 (868) 123-4567 | ✉ contact@thevelvetchapter.com</p>
+        </div>
+
+        <div class="store-location">
+            <h3>📍 South Branch - San Fernando</h3>
+            <p>456 Novel Street, San Fernando, Trinidad</p>
+            <p>📞 (868) 987-6543 | ✉ south@thevelvetchapter.com</p>
+        </div>
+
+        <!-- Google Maps Integration (Optional) -->
+        <div class="map-container">
+            <iframe
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-policy">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a> </li>
+                <li><a href="terms.html">Terms of Service</a> </li>
+                <li><a href="shipping&amp;returns.html">Shipping & Returns</a> </li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/thevelvetchapter"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/thevelvetchapter"><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+        <p class="copyright">&copy; 2025 The Velvet Chapter. All rights reserved.</p>
+</body>
+</html>
